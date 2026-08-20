@@ -1,0 +1,46 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Compilar AL (qmake + make)",
+            "type": "shell",
+            "windows": {
+                "command": "${workspaceFolder}\\build.bat"
+            },
+            "linux": {
+                "command": "${workspaceFolder}/build.sh"
+            },
+            "osx": {
+                "command": "${workspaceFolder}/build.sh"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"],
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            }
+        },
+        {
+            "label": "Compilar y ejecutar AL",
+            "type": "shell",
+            "windows": {
+                "command": "${workspaceFolder}\\build.bat run"
+            },
+            "linux": {
+                "command": "${workspaceFolder}/build.sh run"
+            },
+            "osx": {
+                "command": "${workspaceFolder}/build.sh run"
+            },
+            "group": "build",
+            "problemMatcher": ["$gcc"],
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            }
+        }
+    ]
+}
