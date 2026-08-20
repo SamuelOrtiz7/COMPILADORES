@@ -8,6 +8,9 @@ on:
 jobs:
   build-windows:
     runs-on: windows-latest
+    defaults:
+      run:
+        working-directory: Code/AL
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -37,4 +40,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: AL-Windows-Portable
-          path: dist
+          path: Code/AL/dist
