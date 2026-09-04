@@ -1,2 +1,0 @@
-set(__QT_DEPLOY_TARGET_AL_FILE /home/xrr/Escritorio/COMPILADORES/Code/AL/build/AL)
-set(__QT_DEPLOY_TARGET_AL_TYPE EXECUTABLE)

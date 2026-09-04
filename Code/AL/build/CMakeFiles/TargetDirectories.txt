@@ -1,5 +1,0 @@
-/home/xrr/Escritorio/COMPILADORES/Code/AL/build/CMakeFiles/AL.dir
-/home/xrr/Escritorio/COMPILADORES/Code/AL/build/CMakeFiles/edit_cache.dir
-/home/xrr/Escritorio/COMPILADORES/Code/AL/build/CMakeFiles/rebuild_cache.dir
-/home/xrr/Escritorio/COMPILADORES/Code/AL/build/CMakeFiles/AL_autogen_timestamp_deps.dir
-/home/xrr/Escritorio/COMPILADORES/Code/AL/build/CMakeFiles/AL_autogen.dir
