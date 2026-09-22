@@ -1,0 +1,2 @@
+set(__QT_DEPLOY_TARGET_ValidadorID_FILE /home/xrr/Escritorio/COMPILADORES/Code/ValidadorID/build/ValidadorID)
+set(__QT_DEPLOY_TARGET_ValidadorID_TYPE EXECUTABLE)
