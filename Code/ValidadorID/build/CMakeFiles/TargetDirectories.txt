@@ -1,5 +1,0 @@
-/home/xrr/Escritorio/COMPILADORES/Code/ValidadorID/build/CMakeFiles/ValidadorID.dir
-/home/xrr/Escritorio/COMPILADORES/Code/ValidadorID/build/CMakeFiles/edit_cache.dir
-/home/xrr/Escritorio/COMPILADORES/Code/ValidadorID/build/CMakeFiles/rebuild_cache.dir
-/home/xrr/Escritorio/COMPILADORES/Code/ValidadorID/build/CMakeFiles/ValidadorID_autogen_timestamp_deps.dir
-/home/xrr/Escritorio/COMPILADORES/Code/ValidadorID/build/CMakeFiles/ValidadorID_autogen.dir
