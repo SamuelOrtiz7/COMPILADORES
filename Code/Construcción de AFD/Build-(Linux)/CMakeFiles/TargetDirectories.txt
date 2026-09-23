@@ -1,0 +1,5 @@
+/home/xrr/Documents/Pr3/Code/build/CMakeFiles/afd_qt.dir
+/home/xrr/Documents/Pr3/Code/build/CMakeFiles/edit_cache.dir
+/home/xrr/Documents/Pr3/Code/build/CMakeFiles/rebuild_cache.dir
+/home/xrr/Documents/Pr3/Code/build/CMakeFiles/afd_qt_autogen_timestamp_deps.dir
+/home/xrr/Documents/Pr3/Code/build/CMakeFiles/afd_qt_autogen.dir
