@@ -25,8 +25,7 @@ std::string ejecutarAFD(int q0,
                          const std::string& transicionesTexto,
                          const std::string cadenas[5],
                          int cantidadCadenas) {
-    // El alfabeto solo se consume para mantener el formato de la practica;
-    // las transiciones ya traen sus propios simbolos.
+
     std::istringstream alfabetoIn(alfabetoTexto);
     char simboloAlfabeto;
     while (alfabetoIn >> simboloAlfabeto) {
