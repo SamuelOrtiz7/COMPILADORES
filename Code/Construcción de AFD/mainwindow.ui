@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>560</width>
+    <height>760</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>AFD - Automata Finito Determinista</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QGroupBox" name="groupIdentificacion">
+      <property name="title">
+       <string>Identificacion del AFD</string>
+      </property>
+      <layout class="QFormLayout" name="formIdentificacion">
+       <item row="0" column="0">
+        <widget class="QLabel" name="labelN">
+         <property name="text">
+          <string>N (numero de estados):</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QSpinBox" name="spinN">
+         <property name="minimum">
+          <number>1</number>
+         </property>
+         <property name="maximum">
+          <number>100</number>
+         </property>
+         <property name="value">
+          <number>3</number>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="labelS">
+         <property name="text">
+          <string>S (tamano del alfabeto):</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QSpinBox" name="spinS">
+         <property name="minimum">
+          <number>1</number>
+         </property>
+         <property name="maximum">
+          <number>100</number>
+         </property>
+         <property name="value">
+          <number>2</number>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="labelD">
+         <property name="text">
+          <string>D (numero de transiciones):</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QSpinBox" name="spinD">
+         <property name="minimum">
+          <number>1</number>
+         </property>
+         <property name="maximum">
+          <number>10000</number>
+         </property>
+         <property name="value">
+          <number>6</number>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="labelQ0">
+         <property name="text">
+          <string>q0 (estado inicial):</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QSpinBox" name="spinQ0">
+         <property name="minimum">
+          <number>1</number>
+         </property>
+         <property name="maximum">
+          <number>100</number>
+         </property>
+         <property name="value">
+          <number>1</number>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLabel" name="labelT">
+         <property name="text">
+          <string>T (numero de estados finales):</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="QSpinBox" name="spinT">
+         <property name="minimum">
+          <number>0</number>
+         </property>
+         <property name="maximum">
+          <number>100</number>
+         </property>
+         <property name="value">
+          <number>1</number>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="0">
+        <widget class="QLabel" name="labelC">
+         <property name="text">
+          <string>C (cantidad de cadenas, maximo 5):</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="1">
+        <widget class="QSpinBox" name="spinC">
+         <property name="minimum">
+          <number>0</number>
+         </property>
+         <property name="maximum">
+          <number>5</number>
+         </property>
+         <property name="value">
+          <number>4</number>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="groupAlfabetoFinales">
+      <property name="title">
+       <string>Alfabeto y estados finales</string>
+      </property>
+      <layout class="QFormLayout" name="formAlfabetoFinales">
+       <item row="0" column="0">
+        <widget class="QLabel" name="labelAlfabeto">
+         <property name="text">
+          <string>Simbolos de Sigma (separados por espacio):</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="lineAlfabeto">
+         <property name="text">
+          <string>0 1</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="labelFinales">
+         <property name="text">
+          <string>Estados finales F (separados por espacio):</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="lineFinales">
+         <property name="text">
+          <string>2</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="groupTransiciones">
+      <property name="title">
+       <string>Transiciones (una por linea: origen simbolo destino)</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayoutTransiciones">
+       <item>
+        <widget class="QPlainTextEdit" name="transicionesEdit">
+         <property name="font">
+          <font>
+           <family>monospace</family>
+          </font>
+         </property>
+         <property name="plainText">
+          <string>1 1 2
+1 0 3
+2 0 3
+2 1 2
+3 0 2
+3 1 2</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="groupCadenas">
+      <property name="title">
+       <string>Cadenas a evaluar (maximo 5, se usan las primeras C)</string>
+      </property>
+      <layout class="QFormLayout" name="formCadenas">
+       <item row="0" column="0">
+        <widget class="QLabel" name="labelCadena1">
+         <property name="text">
+          <string>Cadena 1:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="cadena1">
+         <property name="text">
+          <string>101</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="labelCadena2">
+         <property name="text">
+          <string>Cadena 2:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="cadena2">
+         <property name="text">
+          <string>0</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="labelCadena3">
+         <property name="text">
+          <string>Cadena 3:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLineEdit" name="cadena3">
+         <property name="text">
+          <string>11</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="labelCadena4">
+         <property name="text">
+          <string>Cadena 4:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QLineEdit" name="cadena4">
+         <property name="text">
+          <string>1000100001</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLabel" name="labelCadena5">
+         <property name="text">
+          <string>Cadena 5:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="QLineEdit" name="cadena5"/>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayoutBotones">
+      <item>
+       <widget class="QPushButton" name="ejecutarBtn">
+        <property name="text">
+         <string>Ejecutar</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="limpiarBtn">
+        <property name="text">
+         <string>Limpiar</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QLabel" name="labelResultado">
+      <property name="text">
+       <string>Resultado:</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPlainTextEdit" name="salidaEdit">
+      <property name="font">
+       <font>
+        <family>monospace</family>
+       </font>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
