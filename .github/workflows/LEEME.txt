@@ -1,0 +1,14 @@
+Los workflows de esta carpeta (build-windows.yml, build-windows-afd.yml) NO se
+ejecutan automaticamente al hacer push. Solo tienen el disparador
+"workflow_dispatch", asi que hay que lanzarlos a mano:
+
+  1. Entrar a la pestaña "Actions" del repositorio en GitHub.
+  2. Elegir el workflow en la lista de la izquierda
+     ("Build Windows Portable" o "Build Windows Portable (AFD)").
+  3. Click en "Run workflow" (boton a la derecha), elegir la rama y confirmar.
+  4. Cuando termine, el .exe portable (con las DLLs de Qt) queda descargable
+     como artefacto del run, en la parte de abajo de la pagina del run.
+
+Si en el futuro se agrega otro workflow para compilar otra practica, dejarlo
+tambien solo con "on: workflow_dispatch:" (sin "push:") para no gastar minutos
+de Actions compilando en cada commit.
