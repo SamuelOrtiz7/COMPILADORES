@@ -1,0 +1,36 @@
+[1] 2 + * 3
+  [Error] linea 1: syntax error
+  -> INVALIDA (error sintactico en la linea 1)
+[2] (2 + 3 * 4
+  [Error] linea 2: syntax error
+  -> INVALIDA (error sintactico en la linea 2)
+[3] 2 + 3) * 4
+  [Error] linea 3: syntax error
+  -> INVALIDA (error sintactico en la linea 3)
+[4] 5 5
+  [Error] linea 4: syntax error
+  -> INVALIDA (error sintactico en la linea 4)
+[5] * 7 + 1
+  [Error] linea 5: syntax error
+  -> INVALIDA (error sintactico en la linea 5)
+[6] 3 + 
+  [Error] linea 6: syntax error
+  -> INVALIDA (error sintactico en la linea 6)
+[7] 4 $ 2
+  [Error lexico] linea 7: caracter no reconocido '$'
+  [Error] linea 7: syntax error
+  -> INVALIDA (error sintactico en la linea 7)
+[8] 2valor + 1
+  [Error lexico] linea 8: identificador mal formado '2valor'
+  [Error] linea 8: syntax error
+  -> INVALIDA (error sintactico en la linea 8)
+[9] 10 / ()
+  [Error] linea 9: syntax error
+  -> INVALIDA (error sintactico en la linea 9)
+[10] x + (y * ) - 2
+  [Error] linea 10: syntax error
+  -> INVALIDA (error sintactico en la linea 10)
+
+--- Resumen ---
+Expresiones validas  : 0
+Expresiones invalidas: 10

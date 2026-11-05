@@ -1,0 +1,30 @@
+[1] 2 + 3 * 4
+  -> VALIDA (resultado = 14)
+[2] (2 + 3) * 4
+  -> VALIDA (resultado = 20)
+[3] 10 / 4
+  -> VALIDA (resultado = 2.5)
+[4] 3.14 * 2 * 2
+  -> VALIDA (resultado = 12.56)
+[5] -5 + 8
+  -> VALIDA (resultado = 3)
+[6] 2 ** 3 ** 2
+  -> VALIDA (resultado = 512)
+[7] (1.5 + 2.5) * (3 - 1)
+  -> VALIDA (resultado = 8)
+[8] x + y * 2
+  -> VALIDA (usa identificadores, no se evalua)
+[9] (a + b) * (c - d) / 2
+  -> VALIDA (usa identificadores, no se evalua)
+[10] 10 >= 5 + 2
+  -> VALIDA (condicion = True)
+[11] 3 * 4 == 12
+  -> VALIDA (condicion = True)
+[12] (x + 1) < (y * 2)
+  -> VALIDA (usa identificadores, no se evalua)
+[13] 8 / (4 - 2) != 4
+  -> VALIDA (condicion = False)
+
+--- Resumen ---
+Expresiones validas  : 13
+Expresiones invalidas: 0
